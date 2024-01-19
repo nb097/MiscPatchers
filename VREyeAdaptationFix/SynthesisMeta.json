@@ -1,0 +1,16 @@
+{
+  "Nickname": "VREyeAdaptationFix",
+  "Visibility": "Visible",
+  "OneLineDescription": "Tries to fix Skyrim VR eye adaptation by setting cinematic contrast to 1.",
+  "LongDescription": "Tries to fix Skyrim VR eye adaptation by setting cinematic contrast to 1. Based on findings from SaltyMeatBoy.",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [],
+  "TargetedReleases": [
+    "SkyrimLE",
+    "SkyrimSE",
+    "SkyrimVR",
+    "EnderalLE",
+    "EnderalSE",
+    "SkyrimSEGog"
+  ]
+}
