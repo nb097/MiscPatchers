@@ -10,7 +10,7 @@ namespace VREyeAdaptationFix
         {
             return await SynthesisPipeline
                 .Instance.AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
-                .SetTypicalOpen(GameRelease.SkyrimSE, "YourPatcher.esp")
+                .SetTypicalOpen(GameRelease.SkyrimSE, "VREyeAdaptationFix.esp")
                 .Run(args);
         }
 
