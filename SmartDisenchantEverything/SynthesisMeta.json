@@ -1,6 +1,6 @@
 {
   "Nickname": "SmartDisenchantEverything",
-  "Visibility": "Exclude",
+  "Visibility": "Visible",
   "OneLineDescription": "Remove the disenchant restriction in a smart way",
   "LongDescription": "Remove the disenchant restriction based on the item having scripts with non quest related properties (such as mentioning spells, or items) or where the enchantments look for specific equipped items. Completely customizable!",
   "PreferredAutoVersioning": "Default",
