@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Synthesis.Settings;
 
 namespace SmartDisenchantEverything
@@ -19,5 +21,11 @@ namespace SmartDisenchantEverything
             "Sometimes items have the enchantment effect attached as a script, sometimes it's just a way to push a quest forward"
         )]
         public bool PatchScriptVDAM { get; set; } = false;
+
+        [SynthesisSettingName("Skip Daedric artifacts")]
+        public bool SkipDaedric { get; set; } = false;
+
+        [SynthesisSettingName("Blacklist items")]
+        public List<IFormLinkGetter<IItemGetter>> ItemBlacklist { get; set; } = new();
     }
 }

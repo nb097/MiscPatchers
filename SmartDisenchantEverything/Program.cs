@@ -28,6 +28,9 @@ namespace SmartDisenchantEverything
 
             foreach (var item in state.LoadOrder.PriorityOrder.IItem().WinningOverrides())
             {
+                if (Settings.ItemBlacklist.Contains(item))
+                    continue;
+
                 // check if item has enchantment
                 if (
                     item is not IEnchantableGetter itemEnchants
@@ -41,6 +44,13 @@ namespace SmartDisenchantEverything
 
                 // check if item has magic disallow enchanting keyword
                 if (!itemKeywords.Keywords.Contains(Skyrim.Keyword.MagicDisallowEnchanting))
+                    continue;
+
+                // skip if item is daedric item
+                if (
+                    Settings.SkipDaedric == true
+                    && itemKeywords.Keywords.Contains(Skyrim.Keyword.DaedricArtifact)
+                )
                     continue;
 
                 if (
